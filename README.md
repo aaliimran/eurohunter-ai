@@ -1,1 +1,1 @@
-# EroHunter
+# EuroHunter
