@@ -31,7 +31,7 @@ const GoogleAuthButton = () => {
     //     </button>
     //   </div>
     // );
-    redirect("/pages/auth/start");
+    // redirect("/pages/auth/start");
   }
   // if (status === "unauthenticated") {
   //   redirect("/pages/auth/login");
@@ -44,7 +44,7 @@ const GoogleAuthButton = () => {
       >
         <img
           className="absolute left-4"
-          src="/icons/pages-icons/auth-icons/login-icons/google.svg"
+          src="/icons/auth-icons/google.svg"
           alt="Google Icon"
         />
         <span className="text-black font-sans text-lg font-semibold leading-[128%] tracking-[0.064px]">

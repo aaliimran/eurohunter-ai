@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import StartPageHeader from "@/components/auth-components/header/start-page-header";
-import UserSelectionButton from "@/components/auth-components/buttons/props/user-selection-button";
+import StartPageHeader from "@/components/headers/start-page-header";
+import UserSelectionButton from "@/components/common/user-selection-button";
 import { BriefcaseIcon, ProfileIcon } from "@/utils/icons-with-hover/icons";
 
 const Start = () => {

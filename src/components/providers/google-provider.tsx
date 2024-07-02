@@ -6,8 +6,8 @@ type AuthGoogoleProviderProps = {
   children: ReactNode;
 };
 
-const authGoogleProvider = ({ children }: AuthGoogoleProviderProps) => {
+const AuthGoogleProvider = ({ children }: AuthGoogoleProviderProps) => {
   return <SessionProvider>{children}</SessionProvider>;
 };
 
-export default authGoogleProvider;
+export default AuthGoogleProvider;
