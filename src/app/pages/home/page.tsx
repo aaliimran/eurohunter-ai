@@ -21,10 +21,16 @@ const Home = () => {
         </div>
         <div className="rounded-3xl p-6 flex flex-col gap-5 bg-[#F3F4F6]">
           <h1 className="text-[#000000] text-[20px] font-title font-bold leading-[27px]">
-            Hi! I've found some companies for you, let's write to them.
+            Hi! I&apos;ve found some companies for you, let&apos;s write to
+            them.
           </h1>
           <div className="rounded-2xl p-4 flex justify-center items-start gap-3 bg-[#FFFFFF] border border-color-#DFE1E5">
-            <Image src="/icons/home-icons/krypton-tech.svg" alt="" />
+            <Image
+              src="/icons/home-icons/krypton-tech.svg"
+              alt="Krypton Tech"
+              width={50}
+              height={50}
+            />
             <div className="flex flex-col gap-[6px]">
               <h1 className="text-[#000000] text-[14px] font-title font-bold ">
                 Krypton Tech
@@ -36,12 +42,17 @@ const Home = () => {
               <div></div>
             </div>
             <button className="w-[10%] flex justify-center">
-              <img src="/icons/home-icons/export.svg" alt="export" />
+              <Image
+                src="/icons/home-icons/export.svg"
+                alt="export"
+                width={20}
+                height={20}
+              />
             </button>
           </div>
           <h1 className="text-[#000000] text-[20px] font-title font-bold leading-[27px]">
-            I've prepared a personalised letter for this company, shall we send
-            it?
+            I&apos;ve prepared a personalised letter for this company, shall we
+            send it?
           </h1>
           <div>
             <p className="text-[#000000] text-[14px] font-title font-semibold">
@@ -51,7 +62,7 @@ const Home = () => {
               <div className="flex flex-col gap-6 text-[#000000] text-[14px] font-title font-normal leading-[23px]">
                 <h3>
                   My name is Aziz, and I am interested in potential employment
-                  opportunities at Krypton Tech. I admire your company's
+                  opportunities at Krypton Tech. I admire your company&apos;s
                   achievements and would love to join your team.
                 </h3>
                 <h3>
@@ -76,10 +87,20 @@ const Home = () => {
               <div className="flex justify-between">
                 <div className="flex gap-2">
                   <button>
-                    <Image src="/icons/home-icons/copy.svg" alt="copy" />
+                    <Image
+                      src="/icons/home-icons/copy.svg"
+                      alt="copy"
+                      width={20}
+                      height={20}
+                    />
                   </button>
                   <button>
-                    <Image src="/icons/home-icons/refresh.svg" alt="refresh" />
+                    <Image
+                      src="/icons/home-icons/refresh.svg"
+                      alt="refresh"
+                      width={20}
+                      height={20}
+                    />
                   </button>
                 </div>
                 <label className="text-[#A5ABB8] text-[12px] font-title font-semibold">
@@ -90,7 +111,12 @@ const Home = () => {
           </div>
           <div className="rounded-2xl py-2 px-4 flex flex-row justify-between items-center bg-[#FFFFFF] border border-color-#DFE1E5">
             <div className="flex flex-row gap-2">
-              <Image src="/icons/home-icons/preview.svg" alt="" />
+              <Image
+                src="/icons/home-icons/preview.svg"
+                alt="preview"
+                width={20}
+                height={20}
+              />
               <div className="flex flex-col gap-1">
                 <p className="text-[#000000] text-[14px] font-title font-bold">
                   Aziz Begishov_CV.pdf
@@ -105,10 +131,17 @@ const Home = () => {
                 <Image
                   src="/icons/home-icons/download-button.svg"
                   alt="download"
+                  width={20}
+                  height={20}
                 />
               </button>
               <button>
-                <Image src="/icons/home-icons/edit-pen.svg" alt="edit" />
+                <Image
+                  src="/icons/home-icons/edit-pen.svg"
+                  alt="edit"
+                  width={20}
+                  height={20}
+                />
               </button>
             </div>
           </div>
