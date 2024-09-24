@@ -1,1 +1,1 @@
-# EuroHunter
+# EuroHunter-AI
