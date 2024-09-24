@@ -1,6 +1,13 @@
+"use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const LandingPagesSlogan: React.FC<any> = ({ title, text }) => {
+  const route = useRouter();
+
+  const handleRouteToSignUp = () => {
+    route.push("/pages/auth/login");
+  };
   return (
     <div className="max-w-[1200px] pt-[40px] pb-[80px] flex flex-col justify-center items-center gap-8">
       <h1
@@ -12,7 +19,10 @@ const LandingPagesSlogan: React.FC<any> = ({ title, text }) => {
         dangerouslySetInnerHTML={{ __html: text }}
       />
 
-      <button className="flex py-[20px] px-[32px] justify-center items-center rounded-[8px] bg-[#3F5EFF]">
+      <button
+        onClick={handleRouteToSignUp}
+        className="flex py-[20px] px-[32px] justify-center items-center rounded-[8px] bg-[#3F5EFF]"
+      >
         <span className="text-[#FFF] font-title text-[20px] font-bold">
           Get Started
         </span>

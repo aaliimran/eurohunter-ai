@@ -1,7 +1,23 @@
-import Link from "next/link";
+"use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 
-const UserSelectionCards: React.FC<any> = ({ title, text, bgColor, link }) => {
+const UserSelectionCards: React.FC<any> = ({
+  title,
+  text,
+  bgColor,
+  navigation,
+}) => {
+  const route = useRouter();
+
+  const handleRoute = () => {
+    route.push(navigation);
+  };
+
+  const handleRouteToSignUp = () => {
+    route.push("/pages/auth/login");
+  };
+
   return (
     <div
       className={`p-6 rounded-[27px] flex flex-col justify-center max-w-[580px] mx-auto ${bgColor}`}
@@ -13,14 +29,19 @@ const UserSelectionCards: React.FC<any> = ({ title, text, bgColor, link }) => {
         {text}
       </p>
       <div className="flex space-x-3">
-        <Link href={link}>
-          <button className="px-4 py-[9px] border-[1px] border-solid border-[#282B30] rounded-lg">
-            <span className="text-[14px] text-[#00000] font-title font-bold">
-              Learn more
-            </span>
-          </button>
-        </Link>
-        <button className="px-4 py-[9px] bg-[#3F5EFF] rounded-lg">
+        <button
+          onClick={handleRoute}
+          className="px-4 py-[9px] border-[1px] border-solid border-[#282B30] rounded-lg"
+        >
+          <span className="text-[14px] text-[#00000] font-title font-bold">
+            Learn more
+          </span>
+        </button>
+
+        <button
+          onClick={handleRouteToSignUp}
+          className="px-4 py-[9px] bg-[#3F5EFF] rounded-lg"
+        >
           <span className="text-[14px] text-[#ffffff] font-title font-bold">
             Sign up
           </span>

@@ -1,14 +1,20 @@
 "use client";
 import React, { useState } from "react";
-import StartPageHeader from "@/components/headers/start-page-header";
+import { useRouter } from "next/navigation";
+import { BriefcaseIcon, PersonsIcon } from "@/utils/icons-with-hover/icons";
 import UserSelectionButton from "@/components/common/user-selection-button";
-import { BriefcaseIcon, ProfileIcon } from "@/utils/icons-with-hover/icons";
+import StartPageHeader from "@/components/headers/start-page-header";
 
 const Start = () => {
   const [activeButton, setActiveButton] = useState<string | null>(null);
+  const route = useRouter();
 
   const handleButtonClick = (buttonName: string) => {
     setActiveButton(buttonName);
+  };
+
+  const handleRouteToProfile = () => {
+    route.push("/pages/home");
   };
 
   return (
@@ -30,14 +36,17 @@ const Start = () => {
                 onClick={() => handleButtonClick("jobSeekers")}
               />
               <UserSelectionButton
-                icon={<ProfileIcon />}
+                icon={<PersonsIcon />}
                 text="For companies"
                 isActive={activeButton === "companies"}
                 onClick={() => handleButtonClick("companies")}
               />
             </div>
             <div className="flex max-w-[300px] flex-col justify-center items-center gap-[8px] ">
-              <button className="flex w-[100%] py-[16px] px-[20px] justify-center items-center rounded-[8px] bg-[#3F5EFF] ">
+              <button
+                onClick={handleRouteToProfile}
+                className="flex w-[100%] py-[16px] px-[20px] justify-center items-center rounded-[8px] bg-[#3F5EFF] "
+              >
                 <span className="text-[#FFF] text-center font-title text-[16px] font-bold">
                   Save & Continue
                 </span>

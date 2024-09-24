@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import GoogleAuthButton from "@/components/buttons/google-auth-button";
 

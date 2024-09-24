@@ -1,41 +1,18 @@
 "use client";
-import { signIn, signOut, useSession } from "next-auth/react";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { redirect } from "next/navigation";
+import { signIn, useSession } from "next-auth/react";
 
 const GoogleAuthButton = () => {
-  const { data: session, status } = useSession();
-  const [userEmail, setUserEmail] = useState<string | null>(null);
-  const [userName, setUserName] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (session?.user) {
-      setUserEmail(session.user.email || null);
-      setUserName(session.user.name || null);
-    }
-  }, [session]);
+  const { status } = useSession();
 
   if (status === "loading") {
     return <p>Loading ...</p>;
   }
   if (status === "authenticated") {
-    // return (
-    //   <div>
-    //     <p>Email: {userEmail}</p>
-    //     <p>Name: {userName}</p>
-    //     <button
-    //       className="w-full flex p-4 px-5 justify-center items-center gap-2 rounded-lg border border-gray-300 relative"
-    //       onClick={() => signOut()}
-    //     >
-    //       Logout
-    //     </button>
-    //   </div>
-    // );
-    // redirect("/pages/auth/start");
+    redirect("/pages/main/");
   }
-  // if (status === "unauthenticated") {
-  //   redirect("/pages/auth/login");
-  // }
+
   return (
     <div className="w-[107%] flex pt-[38px]">
       <button

@@ -1,5 +1,4 @@
-import Link from "next/link";
-import Landing from "./pages/landing/page";
+import Landing from "./pages/landing/start";
 
 export default function App() {
   return (

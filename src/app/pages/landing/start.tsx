@@ -1,6 +1,6 @@
+import React from "react";
 import UserSelectionCards from "@/components/common/user-selection-cards";
 import LandingPageHeader from "@/components/headers/landing-page-header";
-import React from "react";
 
 const Landing = () => {
   return (
@@ -14,13 +14,13 @@ const Landing = () => {
         </h1>
         <div className="flex items-center justify-center gap-[40px]">
           <UserSelectionCards
-            link="pages/landing/for-job-seeker"
+            navigation="pages/landing/for-job-seeker"
             title="For job seeker"
             text="With Mentor AI, say goodbye to the stress of endless interviews. Create your profile once, and let our AI streamline your job search, connecting  you effortlessly with the right opportunities."
             bgColor="bg-custom-gradient-blue"
           />
           <UserSelectionCards
-            link="pages/landing/for-companies"
+            navigation="pages/landing/for-companies"
             title="For Companies"
             text="Mentor AI will help you once and for all forget about the endless interview stages and make the hiring and onboarding process a seamless experience."
             bgColor="bg-custom-gradient-green"
