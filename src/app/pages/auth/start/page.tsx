@@ -14,7 +14,7 @@ const Start = () => {
   };
 
   const handleRouteToProfile = () => {
-    route.push("/pages/home");
+    route.push("/pages/main");
   };
 
   return (
