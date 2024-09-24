@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import GoogleAuthButton from "@/components/buttons/google-auth-button";
 
 const LoginPage = () => {
   return (
     <div className="flex justify-center h-screen">
       <div className="flex justify-between min-w-[360px] max-w-[445px] px-0 pt-10 pb-20 flex-col items-center flex-[1_0_0] self-stretch">
-        <img
+        <Image
           src="/images/auth-images/euro-hunter-logo.svg"
           alt="EuroHunter logo"
         />

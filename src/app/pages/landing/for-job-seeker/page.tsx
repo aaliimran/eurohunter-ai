@@ -1,7 +1,8 @@
+import React from "react";
+import Image from "next/image";
 import LandingPageImgTextProps from "@/components/common/landing-pages-img-text-props";
 import LandingPagesSlogan from "@/components/common/landing-pages-slogan";
 import LandingPageHeader from "@/components/headers/landing-page-header";
-import React from "react";
 
 const ForJobSeeker = () => {
   return (
@@ -20,7 +21,10 @@ const ForJobSeeker = () => {
             Our AI mentor helps you create your ultimate job profile and
             accurately plan out <br /> each stage of your application process
           </p>
-          <img src="/images/landing-images/personal-ai-assistant.svg" alt="" />
+          <Image
+            src="/images/landing-images/personal-ai-assistant.svg"
+            alt=""
+          />
         </div>
         <LandingPageImgTextProps
           title={"Technical Interview <br/>with AI"}

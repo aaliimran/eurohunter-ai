@@ -1,9 +1,10 @@
 import React from "react";
+import Image from "next/image";
 
 const CompaniesLandingFooter: React.FC<any> = ({ img, title, text }) => {
   return (
     <div className="flex flex-col  items-start gap-6">
-      <img src={img} alt="" />
+      <Image src={img} alt="" />
       <h1
         className="text-[#000000] text-[24px] text-start font-title font-bold "
         dangerouslySetInnerHTML={{ __html: title }}

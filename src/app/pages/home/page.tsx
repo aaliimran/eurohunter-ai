@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -23,7 +24,7 @@ const Home = () => {
             Hi! I've found some companies for you, let's write to them.
           </h1>
           <div className="rounded-2xl p-4 flex justify-center items-start gap-3 bg-[#FFFFFF] border border-color-#DFE1E5">
-            <img src="/icons/home-icons/krypton-tech.svg" alt="" />
+            <Image src="/icons/home-icons/krypton-tech.svg" alt="" />
             <div className="flex flex-col gap-[6px]">
               <h1 className="text-[#000000] text-[14px] font-title font-bold ">
                 Krypton Tech
@@ -75,10 +76,10 @@ const Home = () => {
               <div className="flex justify-between">
                 <div className="flex gap-2">
                   <button>
-                    <img src="/icons/home-icons/copy.svg" alt="copy" />
+                    <Image src="/icons/home-icons/copy.svg" alt="copy" />
                   </button>
                   <button>
-                    <img src="/icons/home-icons/refresh.svg" alt="refresh" />
+                    <Image src="/icons/home-icons/refresh.svg" alt="refresh" />
                   </button>
                 </div>
                 <label className="text-[#A5ABB8] text-[12px] font-title font-semibold">
@@ -89,7 +90,7 @@ const Home = () => {
           </div>
           <div className="rounded-2xl py-2 px-4 flex flex-row justify-between items-center bg-[#FFFFFF] border border-color-#DFE1E5">
             <div className="flex flex-row gap-2">
-              <img src="/icons/home-icons/preview.svg" alt="" />
+              <Image src="/icons/home-icons/preview.svg" alt="" />
               <div className="flex flex-col gap-1">
                 <p className="text-[#000000] text-[14px] font-title font-bold">
                   Aziz Begishov_CV.pdf
@@ -101,13 +102,13 @@ const Home = () => {
             </div>
             <div className="flex gap-2">
               <button>
-                <img
+                <Image
                   src="/icons/home-icons/download-button.svg"
                   alt="download"
                 />
               </button>
               <button>
-                <img src="/icons/home-icons/edit-pen.svg" alt="edit" />
+                <Image src="/icons/home-icons/edit-pen.svg" alt="edit" />
               </button>
             </div>
           </div>

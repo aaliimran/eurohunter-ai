@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const LandingPageImgTextProps: React.FC<any> = ({
   title,
@@ -20,7 +21,7 @@ const LandingPageImgTextProps: React.FC<any> = ({
           dangerouslySetInnerHTML={{ __html: text }}
         />
       </div>
-      <img src={img} alt="" />
+      <Image src={img} alt="" />
     </div>
   );
 };
